@@ -1,0 +1,167 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+h1 {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+  body {
+    font-size: 16px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  }
+  h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    line-height: 50px;
+  }
+  input[type="email"] {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 10px;
+    width: 350px;
+    height: 40px;
+  }
+
+  .bgdesk {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: cover;
+    width: 800px;
+    height: fit-content;
+    margin: 80px auto;
+  }
+  #spandes {
+    font-weight: 300;
+  }
+  #imp-txt {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  #logopic {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    height: 25px;
+  }
+  #main-txt {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin-top: 60px;
+    line-height: 20px;
+  }
+
+  .big-contain {
+    display: grid;
+    grid-template-rows: 30px 50px 150px 150px 45px 30px;
+    grid-template-columns: 10px 1fr 1.5fr;
+    gap: 0px 80px;
+    place-content: center;
+    border: 1px solid black;
+  }
+  .imgChange2 {
+    background-image: url("./images/hero-desktop.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    right: 8px;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 3;
+  }
+  .txtCol {
+    color: hsl(0, 36%, 70%);
+  }
+  .btn-arr-shop {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 55px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .email-field {
+    display: grid;
+    grid-template-columns: 300px 50px;
+    gap: 0;
+    grid-column-start: 2;
+    grid-row-start: 5;
+  }
+}
+
+/*
+hsl(0, 93%, 68%) !!! error col !!!
+*/
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+  }
+  input[type="email"] {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 10px;
+    width: 350px;
+    height: 40px;
+  }
+
+  .txtCol {
+    color: hsl(0, 36%, 70%);
+  }
+  .big-contain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 150px 80px 60px;
+    column-gap: 0;
+  }
+  .btn-arr-shop {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 55px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .email-field {
+    display: grid;
+    grid-template-columns: 300px 50px;
+    gap: 0;
+  }
+  .imgChange2 {
+    background-image: url("./images/hero-mobile.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+  }
+
+  #logopic {
+    margin: 8px;
+    height: 15px;
+  }
+  #deskfix {
+    display: none;
+  }
+  #spandes {
+    font-weight: 300;
+  }
+  #main-txt {
+    text-align: center;
+    font-size: 13px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
